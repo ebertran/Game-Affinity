@@ -9,261 +9,229 @@ const items = [{
     {
         id: 2,
         question: "Which do you enjoy more in quests?",
-        answerA: "Getting involved in the storyline",
-        valueA: "s",
-        answerB: "Getting the rewards at the end",
-        valueB: "a"
+        answers: {
+            "Getting involved in the storyline": "s",
+            "Getting the rewards at the end": "a"
+        }
     },
-
-    item2 = {
-        id: "q2",
+    {
+        id: 3,
         question: "Would you rather be:",
-        answerA: "Popular?",
-        valueA: "s",
-        answerB: "Wealthy?",
-        valueB: "a"
+        answers: {
+            "Popular?": "s",
+            "Wealthy?": "a"
+        }
     },
-
-    item3 = {
-        id: "q3",
+    {
+        id: 4,
         question: "Which do you enjoy more in an online game?",
-        answerA: "Getting the latest gossip",
-        valueA: "s",
-        answerB: "Getting a new item",
-        valueB: "a"
+        answers: {
+            "Getting the latest gossip" : "s",
+            "Getting a new item" : "a"
+        }
     },
-
-    item4 = {
-        id: "q4",
+    {
+        id: 5,
         question: "Which would you rather have, as a player in an online game?",
-        answerA: "A private channel, over which you and your friends can communicate",
-        valueA: "s",
-        answerB: "Your own house, worth millions of gold coins",
-        valueB: "e"
+        answers: {
+            "A private channel, over which you and your friends can communicate" : "s",
+            "Your own house, worth millions of gold coins" : "e"
+        }
     },
-
-    item5 = {
-        id: "q5",
+    {
+        id: 6,
         question: "Which would you enjoy more as an online game player?",
-        answerA: "Running your own tavern?",
-        valueA: "s",
-        answerB: "Making your own maps of the world, then selling them",
-        valueB: "e"
+        answers: {
+            "Running your own tavern?" : "s",
+            "Making your own maps of the world, then selling them" : "e"
+        }
     },
-
-    item6 = {
-        id: "q6",
+    {
+        id: 7,
         question: "hat's more important in an online game to you?",
-        answerA: "The number of people",
-        valueA: "s",
-        answerB: "The number of areas to explore<",
-        valueB: "e"
+        answers: {
+            "The number of people" : "s",
+            "The number of areas to explore" : "e"
+        }
     },
-
-    item7 = {
-        id: "q7",
+    {
+        id: 8,
         question: "What's more important to you?",
-        answerA: "The quality of roleplaying in an online game",
-        valueA: "s",
-        answerB: "The uniqueness of the features, and game mechani",
-        valueB: "e"
+        answers: {
+            "The quality of roleplaying in an online game" : "s",
+            "The uniqueness of the features, and game mechani" : "e"
+        }
     },
-
-    item8 = {
-        id: "q8",
+    {
+        id: 9,
         question: "You're a player in an online game, and you want to fight a really tough dragon. How would you approach this problem?",
-        answerA: "Get a big group of players to kill it.",
-        valueA: "s",
-        answerB: "Try a variety of weapons and magic against it, until you find its weakness.",
-        valueB: "e"
+        answers: {
+            "Get a big group of players to kill it." : "s",
+            "Try a variety of weapons and magic against it, until you find its weakness." : "e"
+        }
     },
-
-    item9 = {
-        id: "q9",
+    {
+        id: 10,
         question: "You're a player in an online game, and about to go into an unknown dungeon. You have your choice of one more person for your party. Do you bring:",
-        answerA: "A bard, who's a good friend of yours and who's great for entertaining you and your friends",
-        valueA: "s",
-        answerB: "A wizard, to identify the items that you find there?",
-        valueB: "e"
+        answers: {
+            "A bard, who's a good friend of yours and who's great for entertaining you and your friends" : "s",
+            "A wizard, to identify the items that you find there?" : "e"
+        }
     },
-
-    item10 = {
-        id: "q10",
+    {
+        id: 11,
         question: "Someone has PK'ed you (killed you in player vs. player combat). Do you want to:",
-        answerA: "Find out why, and try to convince them not to do it again",
-        valueA: "s",
-        answerB: "Plot your revenge?",
-        valueB: "k"
+        answers: {
+            "Find out why, and try to convince them not to do it again" : "s",
+            "Plot your revenge?" : "k"
+        }
     },
-
-    item11 = {
-        id: "q11",
+    {
+        id: 12,
         question: "Which is more exciting?",
-        answerA: "A well-roleplayed scenario",
-        valueA: "s",
-        answerB: "A deadly battle",
-        valueB: "k"
+        answers: {
+            "A well-roleplayed scenario" : "s",
+            "A deadly battle" : "k"
+        }
     },
-
-    item12 = {
-        id: "q12",
+    {
+        id: 13,
         question: "Which would you enjoy more?",
-        answerA: "Winning a duel with another player",
-        valueA: "k",
-        answerB: "Getting accepted by a clan (a group of other players)",
-        valueB: "s"
+        answers: {
+            "Winning a duel with another player" : "k",
+            "Getting accepted by a clan (a group of other players)" : "s"
+        } 
     },
-
-    item13 = {
-        id: "q13",
+    {
+        id: 14,
         question: "What's worse:",
-        answerA: "To be without power",
-        valueA: "k",
-        answerB: "To be without friends?",
-        valueB: "s"
+        answers: {
+            "To be without power" : "k",
+            "To be without friends?" : "s"
+        }
     },
-
-    item14 = {
-        id: "q14",
+    {
+        id: 15,
         question: "Would you rather:",
-        answerA: "Hear what someone has to say",
-        valueA: "s",
-        answerB: "Show them the sharp blade of your axe?",
-        valueB: "k"
+        answers: {
+            "Hear what someone has to say" : "s",
+            "Show them the sharp blade of your axe?" : "k"
+        }
     },
-
-    item15 = {
-        id: "q15",
+    {
+        id: 16,
         question: "In an online game, a new area opens up. Which do you look forward to more?",
-        answerA: "Exploring the new area, and finding out its history",
-        valueA: "e",
-        answerB: "Being the first to get the new equipment from the area",
-        valueB: "a"
+        answers: {
+            "Exploring the new area, and finding out its history" : "e",
+            "Being the first to get the new equipment from the area" : "a"
+        }
     },
-
-    item16 = {
-        id: "q16",
+    {
+        id: 17,
         question: "In an online game, would you rather be known as:",
-        answerA: "Someone who can run from any two points in the world, and really knows their way around",
-        valueA: "e",
-        answerB: "The person with the best, most unique equipment in the game?",
-        valueB: "a"
+        answers: {
+            "Someone who can run from any two points in the world, and really knows their way around" : "e",
+            "The person with the best, most unique equipment in the game?" : "a"
+        }
     },
-
-    item17 = {
-        id: "q17",
+    {
+        id: 18,
         question: "Would you rather:",
-        answerA: "Become a hero faster than your friends",
-        valueA: "a",
-        answerB: "Know more secrets than your friends?",
-        valueB: "e"
+        answers: {
+            "Become a hero faster than your friends" : "a",
+            "Know more secrets than your friends?" : "e"
+        }
     },
-
-    item18 = {
-        id: "q18",
+    {
+        id: 19,
         question: "Would you rather:",
-        answerA: "Know where to find things",
-        valueA: "e",
-        answerB: "Know how to get things?",
-        valueB: "a"
+        answers: {
+            "Know where to find things" : "e",
+            "Know how to get things?" : "a"
+        }
     },
-
-    item19 = {
-        id: "q19",
+    {
+        id: 20,
         question: "Which would you rather do:",
-        answerA: "Solve a riddle no one else has solved",
-        valueA: "e",
-        answerB: "Getting to a certain experience level faster than anyone else?",
-        valueB: "a"
+        answers: {
+            "Solve a riddle no one else has solved" : "e",
+            "Getting to a certain experience level faster than anyone else?" : "a"
+        }
     },
-
-    item = {
-        id: "q20",
+    {
+        id: 21,
         question: "In an online game, would rather be known for",
-        answerA: "Knowledge",
-        valueA: "e",
-        answerB: "Power?",
-        valueB: "k"
+        answers: {
+            "Knowledge" : "e",
+            "Power?" : "k"
+        }
     },
-
-    item21 = {
-        id: "q21",
+    {
+        id: 22,
         question: "Would you rather win:",
-        answerA: "A trivia contest",
-        valueA: "e",
-        answerB: "An arena battle?",
-        valueB: "k"
+        answers: {
+            "A trivia contest" : "e",
+            "An arena battle?" : "k"
+        }
     },
-
-    item22 = {
-        id: "q22",
+    {
+        id: 23,
         question: "If you're alone in an area, do you think:",
-        answerA: "It's safe to explore",
-        valueA: "e",
-        answerB: "You'll have to look elsewhere for prey?",
-        valueB: "k"
+        answers: {
+            "It's safe to explore" : "e",
+            "You'll have to look elsewhere for prey?" : "k"}
     },
-
-    item23 = {
-        id: "q23",
+    {
+        id: 24,
         question: "You learn that another player is planning your demise. Do you:",
-        answerA: "Go to an area your opponent is unfamiliar with and prepare there",
-        valueA: "e",
-        answerB: "Attack them before he attacks you?",
-        valueB: "k"
+        answers: {
+            "Go to an area your opponent is unfamiliar with and prepare there" : "e",
+            "Attack them before he attacks you?" : "k"
+        }
     },
-
-    item24 = {
-        id: "q24",
+    {
+        id: 25,
         question: "You meet a new player. Do you think of them as:",
-        answerA: "Someone who can appreciate your knowledge of the game",
-        valueA: "e",
-        answerB: "As potential prey?",
-        valueB: "k"
+        answers: {
+            "Someone who can appreciate your knowledge of the game" : "e",
+            "As potential prey?": "k"
+        }
     },
-
-    item25 = {
-        id: "q25",
+    {
+        id: 26,
         question: "In an online game, would you rather:",
-        answerA: "Have a sword twice as powerful as any other in the game",
-        valueA: "a",
-        answerB: "Be the most feared person in the game?",
-        valueB: "k"
+        answers: { 
+            "Have a sword twice as powerful as any other in the game": "a",
+            "Be the most feared person in the game?": "k"
     },
-
-    item26 = {
-        id: "q26",
+    {
+        id: 27,
         question: "In an online game, would you be more prone to brag about:",
-        answerA: "How many other players you've killed",
-        valueA: "k",
-        answerB: "Your equipment?",
-        valueB: "a"
+        answers: {
+                "How many other players you've killed": "k",
+                "Your equipment?": "a"}
     },
-
-    item27 = {
-        id: "q27",
+    {
+        id: 28,
         question: "Would you rather have:",
-        answerA: "A spell to damage other players",
-        valueA: "k",
-        answerB: "A spell that increases the rate at which you gain experience points?",
-        valueB: "a"
+        answers: {
+                "A spell to damage other players": "k",
+                "A spell that increases the rate at which you gain experience points?": "a"
     },
-
-    item28 = {
-        id: "q28",
+    {
+        id: 29,
         question: "Would you rather receive as a quest reward:",
-        answerA: "Experience points",
-        valueA: "a",
-        answerB: "A wand with 3 charges of a spell that lets you control other players, against their will?",
-        valueB: "k"
+        answers: {
+            "Experience points": "a",
+            "A wand with 3 charges of a spell that lets you control other players, against their will?": "k"
+        }
     },
-
-    item29 = {
-        id: "q29",
+    {
+        id: 30,
         question: "When playing a video game, is it more fun to:",
-        answerA: "Have the highest score on the list",
-        valueA: "a",
-        answerB: "Beat your best friend one-on-one?",
-        valueB: "k"
+        answers: {
+            "Have the highest score on the list" : "a",
+            "Beat your best friend one-on-one?" : "k"
+        }
     }
 ]

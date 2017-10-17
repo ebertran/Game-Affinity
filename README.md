@@ -2,7 +2,7 @@
 
 ### Resources  
 
-[Dropwizard](https://bootswatch.com/) - Themes for Bootstrap
+[Bootswatch](https://bootswatch.com/) - Themes for Bootstrap
 
 
 

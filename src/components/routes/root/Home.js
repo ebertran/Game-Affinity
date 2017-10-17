@@ -1,5 +1,5 @@
 import React from 'react'
-import { Jumbotron, Button, Grid, Row, Col, Thumbnail } from 'react-bootstrap'
+import { Jumbotron, Button, Grid, Row, Col, Image } from 'react-bootstrap'
 
 import './Home.css'
 
@@ -9,8 +9,8 @@ const Home = () => (
       <Grid>
         <Row>
           <Col sm={8}>
-            <h1>Hello, world!</h1>
-            <p>Contents...</p>
+            <h1>What kind of player are you?</h1>
+            <p>Find your way for how you are!</p>
           </Col>
           <Col sm={4}>
             <p><Button bsStyle="primary" bsSize="large">Do the test!</Button></p>
@@ -18,37 +18,28 @@ const Home = () => (
         </Row>
       </Grid>    
     </Jumbotron>
-    <Grid>
+    <Grid id="thumbnails-info">
       <Row>
-        <Col sm={4}>
-          <Thumbnail src="/assets/thumbnaildiv.png" alt="242x200">
-            <h3>Thumbnail label</h3>
-            <p>Description</p>
-            <p>
-              <Button bsStyle="primary">Button</Button>&nbsp;
-              <Button bsStyle="default">Button</Button>
-            </p>
-          </Thumbnail>
+        <Col sm={4} className="text-center">
+          <a href="#">
+            <Image src="img/command.png" responsive />
+          </a>
+            <h3>Test it!</h3>
+            <p>The most amazing test for new gamers.</p>
         </Col>
-        <Col sm={4}>
-          <Thumbnail src="/assets/thumbnaildiv.png" alt="242x200">
-            <h3>Thumbnail label</h3>
-            <p>Description</p>
-            <p>
-              <Button bsStyle="primary">Button</Button>&nbsp;
-              <Button bsStyle="default">Button</Button>
-            </p>
-          </Thumbnail>
+        <Col sm={4} className="text-center">
+          <a href="#">
+            <Image src="img/statistics.png" responsive />
+          </a>
+            <h3>Discover</h3>
+            <p>The most amazing test for new gamers.</p>
         </Col>
-        <Col xs={6} md={4}>
-          <Thumbnail src="/assets/thumbnaildiv.png" alt="242x200">
-            <h3>Thumbnail label</h3>
-            <p>Description</p>
-            <p>
-              <Button bsStyle="primary">Button</Button>&nbsp;
-              <Button bsStyle="default">Button</Button>
-            </p>
-          </Thumbnail>
+        <Col sm={4} className="text-center">
+          <a href="#">
+            <Image src="img/101.png" responsive />
+          </a>
+            <h3>Test it!</h3>
+            <p>The most amazing test for new gamers.</p>
         </Col>
       </Row>
     </Grid>
