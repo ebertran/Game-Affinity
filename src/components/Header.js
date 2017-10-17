@@ -15,7 +15,7 @@ const Header = () => (
     </Navbar.Header>
     <Navbar.Collapse>
       <Nav>
-        <LinkContainer to="/" exact="true">
+        <LinkContainer to="/" exact={true}>
           <NavItem eventKey={1} href="#">Home</NavItem>
         </LinkContainer>
         <LinkContainer to="/test">
