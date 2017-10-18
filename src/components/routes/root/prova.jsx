@@ -29,13 +29,13 @@ class Test extends Component {
 
             i: 0
 
-            actualItem: {
-                question: Items[this.state.i].question,
-                answer1: Object.keys([Items[this.state.i].answers[0]),
-                answer2: Object.keys([Items[this.state.i].answers[1]),
-                answer1value: Object.values([Items[this.state.i].answers[0]),
-                answer2value: Object.values([Items[this.state.i].answers[1])
-            }
+            // actualItem: {
+            //     question: Items[this.state.i].question,
+            //     answer1: Object.keys([Items[this.state.i].answers[0]),
+            //     answer2: Object.keys([Items[this.state.i].answers[1]),
+            //     answer1value: Object.values([Items[this.state.i].answers[0]),
+            //     answer2value: Object.values([Items[this.state.i].answers[1])
+            // }
         }
 
         //console.log(Items[this.state.i].question)
@@ -55,12 +55,12 @@ class Test extends Component {
           <hr/>
           <Row>
             <Col sm={6} smOffset={3}>
-              <Button bsStyle="primary" bsSize="large" onClick={this.onAnswerInput} value="actualItem.answer1value">{actualItem.answer1}></Button>
-              <Button bsStyle="primary" bsSize="large" onClick={this.onAnswerInput} value="actualItem.answer2value">{actualItem.answer2}></Button>
+              <Button bsStyle="primary" bsSize="large" block {/*onClick={{this.onAnswerInput}}*/} value=""{/*actualItem.answer1value}>{actualItem.answer1*/}></Button>
+              <Button bsStyle="primary" bsSize="large" block {/*onClick={this.onAnswerInput}*/} value=""{/*actualItem.answer2value}>{actualItem.answer2*/}></Button>
             </Col>
           </Row>                
         </div>
-        <ProgressBar active now={(this.state.i)/30*100} />
+        <ProgressBar active now=""{/*(this.state.i)/30*100*/} />
       </Grid>
     )
   }

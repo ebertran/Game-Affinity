@@ -181,7 +181,8 @@ const items = [{
         question: "If you're alone in an area, do you think:",
         answers: {
             "It's safe to explore" : "e",
-            "You'll have to look elsewhere for prey?" : "k"}
+            "You'll have to look elsewhere for prey?" : "k"
+        }
     },
     {
         id: 24,
@@ -205,13 +206,15 @@ const items = [{
         answers: { 
             "Have a sword twice as powerful as any other in the game": "a",
             "Be the most feared person in the game?": "k"
+        }
     },
     {
         id: 27,
         question: "In an online game, would you be more prone to brag about:",
         answers: {
                 "How many other players you've killed": "k",
-                "Your equipment?": "a"}
+                "Your equipment?": "a"
+        }
     },
     {
         id: 28,
@@ -219,6 +222,7 @@ const items = [{
         answers: {
                 "A spell to damage other players": "k",
                 "A spell that increases the rate at which you gain experience points?": "a"
+        }
     },
     {
         id: 29,
@@ -240,4 +244,4 @@ const items = [{
 
 ]
 
-export default Items
+export default items

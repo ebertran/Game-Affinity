@@ -1,13 +1,7 @@
 import React, { Component } from 'react'
+import { Grid, Row, Button, Col, ProgressBar } from 'react-bootstrap'
 
-const orderedTest = []
-const orderTest = function(elemment) {
-        items.forEach(function(element) {
-            orderedTest.push(element.id)
-        })
-    }
-    
-const randTest = orderedTest[Math.floor(Math.random() * orderedTest.length)]
+import './Test.css'
 
 const items = [{
         id: 1,
@@ -36,44 +30,53 @@ const items = [{
 ]
 
 class Test extends Component {
-    constructor() {
+
+       constructor() {
         super()
 
         this.state = {
             testResult: {
-                k: 0,
-                e: 0,
-                a: 0,
-                s: 0
+                'k': 0,
+                'e': 0,
+                'a': 0,
+                's': 0
             }
+
+            //actualQuestion: {
+
+           // }
         }
     }
 
-	
+    
+    // const question = items.question
+    // const answer1 = Object.keys(this.answers)[0];
+    // const answer2 = Object.keys(this.answers)[1];
+    // const answer1value = Object.values(element.items[0]);
+    // const answer2value = Object.values(element.items[1])];
 
     
-    randTest.forEach(function(element) {
-        const answer1 = Object.keys(element.answers[0]);
-        const answer2 = Object.keys(element.answers[1]);
-        const answer1value = Object.values(element.items[0]);
-        const answer2value = Object.values(element.items[1]);
-
-          render() (
-          <Grid>
+    onAnswerInput = (event) => {
+        console.log(event.target.value)
+        //this.setState({++testResult.event.target.value})
+    }
+    
+   render () {
+      return (
+        <Grid>
             <div className="question-block">
-              <p className="lead">{items[0].question}</p>
+              <p className="lead">{items.question}</p>
               <hr/>
               <Row>
                 <Col sm={6} smOffset={3}>
-                  <Button bsStyle="primary" bsSize="large" block data-value={answer1value}>{answer1}</Button>
-                  <Button bsStyle="primary" bsSize="large" block data-value={answer2value}>{answer2}</Button>
+                  <Button bsStyle="primary" bsSize="large" block onClick={this.onAnswerInput}></Button>
+                  <Button bsStyle="primary" bsSize="large" block onClick={this.onAnswerInput}></Button>
                 </Col>
               </Row>                
             </div>
             <ProgressBar active now={45} />
-          </Grid>
-        )
-        }
-
-    }
+        </Grid>
+     )
+  }
 }
+export default Test
