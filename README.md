@@ -8,7 +8,7 @@
  
 * **Enric Bertran** - *Work* - [ebertran](https://github.com/ebertran)  
 * **Eva Ibañez de Garayo** - *Work* - [eidegarayo](https://github.com/eidegarayo)  
-* * **Jesé Ramon** - *Work* - [waken22](https://github.com/waken22) 
+* **Jesé Ramon** - *Work* - [waken22](https://github.com/waken22) 
 
 ## License
 
