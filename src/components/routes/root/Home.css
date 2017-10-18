@@ -1,4 +1,4 @@
-.callToAction button.btn-lg{
+.callToAction a.btn-lg{
   font-size: 2em;
 }
 
@@ -16,7 +16,10 @@
 .question-block button {
   margin-bottom: 25px;
 }
-#thumbnails-info a {
+#thumbnails-info {
+  margin-top: 5em;
+}
+#thumbnails-info img {
   display: inline-block;
   max-width: 200px;
 }
