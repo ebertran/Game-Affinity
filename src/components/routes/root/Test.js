@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Grid, Row, Button, Col, ProgressBar } from 'react-bootstrap'
+import { Grid, Row, Jumbotron, Button, Col, ProgressBar } from 'react-bootstrap'
 import Items from './items.js'
 import { LinkContainer } from 'react-router-bootstrap'
 
@@ -73,7 +73,7 @@ class Test extends Component {
       } 
     }
    
-    
+  
    render () { 
    if (!this.state.showResults) {
       console.log('show question', this.state.i)
@@ -93,13 +93,18 @@ class Test extends Component {
     )
     } else {
       console.log(this.state.testResult)
-      return (<Row>
-            <Col sm={6} smOffset={3}>
+      return (<Grid className="results">
+        
+        <div className="question-block">  
+        <Row>
               <LinkContainer to="/results">
-                  <Button bsStyle="primary" bsSize="large" data-value={this.state.testResult}>Show me the results!</Button>
+                  <Button text-center bsStyle="primary" block bsSize="large" data-value={this.state.testResult}><h2>Show me the results!</h2></Button>
               </LinkContainer>
-            </Col>
+           
           </Row>
+          </div>  
+          
+          </Grid>
               )
     }
   }
