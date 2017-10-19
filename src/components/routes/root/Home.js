@@ -34,7 +34,7 @@ const Home = () => (
           <h3>Discover your gamer personality</h3>
         </Col>
         <Col sm={4} className="text-center">
-          <Image src="img/101.png" responsive />
+          <Image src="img/command-old.png" responsive />
           <h3>See your personal recomendation</h3>
         </Col>
       </Row>

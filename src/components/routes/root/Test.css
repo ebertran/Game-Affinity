@@ -6,7 +6,11 @@
 .question-block button {
   margin-bottom: 25px;
 }
+.question-block button {
+  white-space:normal !important;
+  word-wrap: break-word; 
+}
 #thumbnails-info a {
   display: inline-block;
   max-width: 200px;
-}
+} 

@@ -3,16 +3,21 @@ import { Grid, Row, Col, Image } from 'react-bootstrap'
 
 import Recomendations from "./Recomendations"
 import gamersClassInfo from "../../../dataService/gamersClassInfo"
+import GetIdChar from "../../../utils/utils"
 
 import './Results.css'
 
+const testResult = {k: 7, e: 2, a: 0, s: 3}
 
 class Results extends Component {
   render() {
-    const gamerClass = gamersClassInfo[0].gamer.toUpperCase()
-    const gamerDescription = gamersClassInfo[0].description
-    const imgUrl = gamersClassInfo[0].imgUrl
-    const recomendationsIdList = ["14829", "14825"]
+    const recomendationsIdList = GetIdChar(testResult)
+    const gamerProfileId = recomendationsIdList[2]
+    const gamerProfileIndex = gamersClassInfo.findIndex( item =>
+      item.id === gamerProfileId)
+    const gamerClass = gamersClassInfo[gamerProfileIndex].gamer.toUpperCase()
+    const gamerDescription = gamersClassInfo[gamerProfileIndex].description
+    const imgUrl = gamersClassInfo[gamerProfileIndex].imgUrl
     return (
       <Grid className="results">
         <Row>
@@ -28,7 +33,7 @@ class Results extends Component {
         <hr />
         <Row>
           <Col md={6}>
-            <h3>How is a {gamersClassInfo[0].gamer} gamer?</h3>
+            <h3>How is a {gamersClassInfo[gamerProfileIndex].gamer} gamer?</h3>
             <p>{gamerDescription}</p>
           </Col>
           <Col md={6}>

@@ -3,7 +3,7 @@ const gamersClassInfo = [
     id: "k",
     gamer: "Killer",
     description: "Killers get their kicks from imposing themselves on others. This may be 'nice', ie. busybody do-gooding, but few people practice such an approach because the rewards (a warm, cosy inner glow, apparently) aren't very substantial. Much more commonly, people attack other players with a view to killing off their personae (hence the name for this style of play). The more massive the distress caused, the greater the killer's joy at having caused it. Normal points-scoring is usually required so as to become powerful enough to begin causing havoc in earnest, and exploration of a kind is necessary to discover new and ingenious ways to kill people. Even socialising is sometimes worthwhile beyond taunting a recent victim, for example in finding out someone's playing habits, or discussing tactics with fellow killers. They're all just means to an end, though; only in the knowledge that a real person, somewhere, is very upset by what you've just done, yet can themselves do nothing about it, is there any true adrenalin-shooting, juicy fun.",
-    imgUrl: "/img/killer.png"
+    imgUrl: "/img/killer3.png"
   },
   {
     id: "a",
@@ -21,7 +21,7 @@ const gamersClassInfo = [
     id: "s",
     gamer: "Socialiser",
     description: "Socialisers are interested in people, and what they have to say. The game is merely a backdrop, a common ground where things happen to players. Inter-player relationships are important: empathising with people, sympathising, joking, entertaining, listening; even merely observing people play can be rewarding - seeing them grow as individuals, maturing over time. Some exploration may be necessary so as to understand what everyone else is talking about, and points-scoring could be required to gain access to neat communicative spells available only to higher levels (as well as to obtain a certain status in the community). Killing, however, is something only ever to be excused if it's a futile, impulsive act of revenge, perpetrated upon someone who has caused intolerable pain to a dear friend. The only ultimately fulfilling thing is not how to rise levels or kill hapless drips; it's getting to know people, to undertand them, and to form beautiful, lasting relationships.",
-  imgUrl: "/img/socialiser.png"
+  imgUrl: "/img/socializer.png"
   }
 ]
 
