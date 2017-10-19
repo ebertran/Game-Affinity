@@ -71,14 +71,8 @@ class Test extends Component {
           answer2value: Object.values(Items[i + 1].answers)[1]
         }
       } 
-
-      
-    // } else {
-    //   <LinkContainer to ="/results">
-    //     <a result= {this.state.testResult}>
-    //   </LinkContainer>
-    // }
-   }
+    }
+   
     
    render () { 
    if (!this.state.showResults) {
@@ -97,9 +91,16 @@ class Test extends Component {
         <ProgressBar active now={(this.state.i + 1)/Items.length*100}/>
       </Grid>
     )
-    }else{
-      console.log('show result')
-      return <h1>show results!</h1>
+    } else {
+      console.log(this.state.testResult)
+      return (<Row>
+            <Col sm={6} smOffset={3}>
+              <LinkContainer to="/results">
+                  <Button bsStyle="primary" bsSize="large" data-value={this.state.testResult}>Show me the results!</Button>
+              </LinkContainer>
+            </Col>
+          </Row>
+              )
     }
   }
 }
