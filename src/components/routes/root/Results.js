@@ -7,10 +7,9 @@ import GetIdChar from "../../../utils/utils"
 
 import './Results.css'
 
-const testResult = {k: 7, e: 2, a: 0, s: 3}
-
 class Results extends Component {
   render() {
+    const testResult = this.props.answers
     const recomendationsIdList = GetIdChar(testResult)
     const gamerProfileId = recomendationsIdList[2]
     const gamerProfileIndex = gamersClassInfo.findIndex( item =>
