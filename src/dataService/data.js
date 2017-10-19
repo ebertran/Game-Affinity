@@ -19,40 +19,40 @@ const dictionary = {
           Name : "Irelia", Type : { k : 20, a : 9, e : 1, s : 0 }, Id : 17184
         },
         {
-          Name : "Teemo", Type : { k : 0, a : 0, e : 0, s : 0 }, Id : 14844
+          Name : "Teemo", Type : { k : 15, a : 5, e : 10, s : 0 }, Id : 14844
         },
         {
-          Name : "Jarvan IV", Type : { k : 0, a : 0, e : 0, s : 0 }, Id : 18133
+          Name : "Jarvan IV", Type : { k : 15, a : 0, e : 10, s : 5 }, Id : 18133
         },
         // ACHIEVER
         {
-          Name : "Nasus", Type : { k : 0, a : 0, e : 0, s : 0 }, Id : 12799
+          Name : "Nasus", Type : { k : 10, a : 20, e : 0, s : 0 }, Id : 12799
         },
         {
-          Name : "Veigar", Type : { k : 0, a : 0, e : 0, s : 0 }, Id : 14848
+          Name : "Veigar", Type : { k : 10, a : 15, e : 5, s : 0 }, Id : 14848
         },
         {
-          Name : "Nunu", Type : { k : 0, a : 0, e : 0, s : 0 }, Id : 8022
+          Name : "Nunu", Type : { k : 0, a : 10, e : 15, s : 5 }, Id : 8022
         },
         // EXPLORER
         {
-          Name : "Bardo", Type : { k : 0, a : 0, e : 0, s : 0 }, Id : 12464
+          Name : "Bardo", Type : { k : 0, a : 10, e : 15, s : 5 }, Id : 12464
         },
         // SOCIALISER
         {
-          Name : "Janna", Type : { k : 0, a : 0, e : 0, s : 0 }, Id : 14826
+          Name : "Janna", Type : { k : 0, a : 0, e : 20, s : 10 }, Id : 14826
         },
         {
-          Name : "Soraka", Type : { k : 0, a : 0, e : 0, s : 0 }, Id : 14842
+          Name : "Soraka", Type : { k : 0, a : 5, e : 5, s : 20 }, Id : 14842
         },
         {
-          Name : "Sona", Type : { k : 0, a : 0, e : 0, s : 0 }, Id : 16628
+          Name : "Sona", Type : { k : 10, a : 0, e : 5, s : 15 }, Id : 16628
         },
         {
-          Name : "Nami", Type : { k : 0, a : 0, e : 0, s : 0 }, Id : 25239
+          Name : "Nami", Type : { k : 0, a : 10, e : 3, s : 17 }, Id : 25239
         },
         {
-          Name : "Lulu", Type : { k : 0, a : 0, e : 0, s : 0 }, Id : 12071
+          Name : "Lulu", Type : { k : 7, a : 0, e : 8, s : 15 }, Id : 12071
         },
       ],
     },

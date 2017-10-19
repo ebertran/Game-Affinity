@@ -1,24 +1,15 @@
 import React, { Component } from 'react'
 import { Grid, Row, Button, Col, ProgressBar } from 'react-bootstrap'
 import Items from './items.js'
+import { LinkContainer } from 'react-router-bootstrap'
 
 import './Test.css'
-
-// const orderedTest = []
-// const orderTest = function(elemment) {
-//         items.forEach(function(element) {
-//             // orderedTest.push(element.id)
-//         })
-//     }
-//var i = 0;
-    
-//const randTest = orderedTest[Math.floor(Math.random() * orderedTest.length)]
 
 class Test extends Component {       
 
        constructor() {
         super()
-
+        
         this.state = {
             testResult: {
                 k: 0,
@@ -27,42 +18,89 @@ class Test extends Component {
                 s: 0
             },
 
-            i: 0
-
-            actualItem: {
-                question: Items[this.state.i].question,
-                answer1: Object.keys([Items[this.state.i].answers[0]),
-                answer2: Object.keys([Items[this.state.i].answers[1]),
-                answer1value: Object.values([Items[this.state.i].answers[0]),
-                answer2value: Object.values([Items[this.state.i].answers[1])
-            }
+            i: -1,
+            showResults: false
         }
 
-        //console.log(Items[this.state.i].question)
-        console.log(Object.keys([this.state.i].answers))
-    }
+        this.actualItem = {
+              question: Items[0].question,
+              answer1: Object.keys(Items[0].answers)[0],
+              answer2: Object.keys(Items[0].answers)[1],
+              answer1value: Object.values(Items[0].answers)[0],
+              answer2value: Object.values(Items[0].answers)[1]
+          }
+      }
     
     onAnswerInput = (event) => {
-      console.log(event.target.value)
-        this.setState({[testResult.event.target.value]: ++this.state.testResult[testResult.event.target.value]});
-        this.setState({i:++i})
-    }
+      console.log(this.state)
+
+      const i = this.state.i + 1
+      const data = event.target.getAttribute('data')
+      
+      if (i < Items.length - 1) {
+        this.setState(function(prevState) {
+              prevState.testResult[data]++
+              prevState.i = i
+            
+              return prevState
+          })
+      } else if (i === Items.length - 1) {
+          this.setState(function(prevState) {
+              prevState.testResult[data]++
+              prevState.i = i
+            
+              return prevState
+          })
+
+          setTimeout(() => {
+              this.setState(function(prevState) {
+                  prevState.showResults = true
+                
+                  return prevState
+              })
+          }, 800)      
+      }
+
+        
+      if (i < Items.length - 1) {
+        this.actualItem = {
+          question: Items[i + 1].question,
+          answer1: Object.keys(Items[i + 1].answers)[0],
+          answer2: Object.keys(Items[i + 1].answers)[1],
+          answer1value: Object.values(Items[i + 1].answers)[0],
+          answer2value: Object.values(Items[i + 1].answers)[1]
+        }
+      } 
+
+      
+    // } else {
+    //   <LinkContainer to ="/results">
+    //     <a result= {this.state.testResult}>
+    //   </LinkContainer>
+    // }
+   }
     
-   render () {
+   render () { 
+   if (!this.state.showResults) {
+      console.log('show question', this.state.i)
       return (<Grid>
         <div className="question-block">
-          <p className="lead">{/*actualItem.question*/}</p>
+          <p className="lead">{this.actualItem.question}</p>
           <hr/>
           <Row>
             <Col sm={6} smOffset={3}>
-              <Button bsStyle="primary" bsSize="large" onClick={this.onAnswerInput} value="actualItem.answer1value">{actualItem.answer1}></Button>
-              <Button bsStyle="primary" bsSize="large" onClick={this.onAnswerInput} value="actualItem.answer2value">{actualItem.answer2}></Button>
+              <Button bsStyle="primary" bsSize="large" block onClick={this.onAnswerInput} data={this.actualItem.answer1value}>{this.actualItem.answer1}</Button>
+              <Button bsStyle="primary" bsSize="large" block onClick={this.onAnswerInput} data={this.actualItem.answer2value}>{this.actualItem.answer2}</Button>
             </Col>
           </Row>                
         </div>
-        <ProgressBar active now={(this.state.i)/30*100} />
+        <ProgressBar active now={(this.state.i + 1)/Items.length*100}/>
       </Grid>
     )
+    }else{
+      console.log('show result')
+      return <h1>show results!</h1>
+    }
   }
 }
   
