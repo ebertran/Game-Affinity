@@ -1,3 +1,10 @@
+.jumbotron {
+  background-image: url(/img/pacman-games-r.jpg);
+}
+.jumbotron-text {
+  background-color: rgba(43,68,80,0.8);
+}
+
 .callToAction a.btn-lg{
   font-size: 2em;
 }
@@ -8,6 +15,8 @@
     margin-top: 2em;
   }
 }
+@media ()
+
 .question-block{
   margin-top: 100px;
   margin-bottom: 100px;
