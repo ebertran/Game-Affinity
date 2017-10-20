@@ -4,6 +4,7 @@ import { Grid, Row, Col, Image } from 'react-bootstrap'
 import Recomendations from "./Recomendations"
 import gamersClassInfo from "../../../dataService/gamersClassInfo"
 import GetIdChar from "../../../utils/utils"
+import RadarChart from "../../charts/radarchart.js"
 
 import './Results.css'
 
@@ -25,8 +26,7 @@ class Results extends Component {
             <h2>YOU ARE {gamerClass} GAMER</h2>
           </Col>
           <Col md={6} className="text-center">
-          {/* TODO --> gráfico jugador */}
-          GRÁFICO JUGADOR
+          <RadarChart test={testResult}/>
           </Col>
         </Row>
         <hr />

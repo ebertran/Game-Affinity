@@ -20,11 +20,6 @@ function GetIdChar(oTestResult) {
   // Make The Array Of Ids
   const ResultIds = games.CHARACTERS.map(function(game) {
 
-    // Filter the Dictionary
-    //const CharsFiltered = dictionary[game].characters.filter(function(character) {
-    //  return character.Type[aTestResult[0][0]] >= selecForFilter
-    //})
-
     // Organize The Chars 
     const CharsOrdered = dictionary[game].characters.sort(function(a, b) {
       return (
