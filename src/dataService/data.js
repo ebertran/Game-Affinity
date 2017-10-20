@@ -61,37 +61,37 @@ const dictionary = {
       characters : [
         // ASSASSINS
         {
-          Name : "Genji", Type : { k : 20, a : 3, e : 7, s : 0 }, Id : 32387
+          Name : "Genji", Type : { k : 25, a : 0, e : 5, s : 0 }, Id : 32387
         },
         {
-          Name : "Soldier: 76", Type : { k : 20, a : 3, e : 7, s : 0 }, Id : 32391
+          Name : "Soldier: 76", Type : { k : 15, a : 0, e : 5, s : 10 }, Id : 32391
         },
         {
-          Name : "Tracer", Type : { k : 20, a : 3, e : 7, s : 0 }, Id : 32394
+          Name : "Tracer", Type : { k : 20, a : 0, e : 10, s : 0 }, Id : 32394
         },
         {
-          Name : "Reaper", Type : { k : 20, a : 3, e : 7, s : 0 }, Id : 32395
+          Name : "Reaper", Type : { k : 20, a : 0, e : 10, s : 0 }, Id : 32395
         },
         {
-          Name : "WidowMaker", Type : { k : 20, a : 3, e : 7, s : 0 }, Id : 32396
+          Name : "WidowMaker", Type : { k : 20, a : 0, e : 10, s : 0 }, Id : 32396
         },
         {
-          Name : "D.VA", Type : { k : 20, a : 3, e : 7, s : 0 }, Id : 32385
+          Name : "D.VA", Type : { k : 20, a : 0, e : 0, s : 10 }, Id : 32385
         },
         // ACHIEVER
         {
-          Name : "Torbjörn", Type : { k : 20, a : 3, e : 7, s : 0 }, Id : 32401
+          Name : "Torbjörn", Type : { k : 5, a : 25, e : 0, s : 0 }, Id : 32401
         },
         // EXPLORER
         {
-          Name : "Lúcio", Type : { k : 20, a : 3, e : 7, s : 0 }, Id : 32390
+          Name : "Lúcio", Type : { k : 5, a : 0, e : 20, s : 5 }, Id : 32390
         },
         // SOCIALISER
         {
-          Name : "Mercy", Type : { k : 20, a : 3, e : 7, s : 0 }, Id : 32404
+          Name : "Mercy", Type : { k : 0, a : 0, e : 10, s : 20 }, Id : 32404
         },
         {
-          Name : "Zenyatta", Type : { k : 20, a : 3, e : 7, s : 0 }, Id : 32405
+          Name : "Zenyatta", Type : { k : 10, a : 15, e : 0, s : 5 }, Id : 32405
         },
       ]
     }
