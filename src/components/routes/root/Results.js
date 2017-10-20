@@ -20,7 +20,7 @@ class Results extends Component {
     return (
       <Grid className="results">
         <Row>
-          <Col md={6} className="text-center user-info">         
+          <Col md={6} className="text-center user-info">        
             <Image src={imgUrl} alt={gamerClass} responsive/>
             <h2>YOU ARE {gamerClass} GAMER</h2>
           </Col>
@@ -39,7 +39,7 @@ class Results extends Component {
             <div className="recomendations text-center">
           <h3>RECOMENDATIONS</h3>
           <Row>
-            <Recomendations characterIdList={recomendationsIdList}/>        
+            <Recomendations characterIdList={ recomendationsIdList }/>        
           </Row>
         </div>
           </Col>

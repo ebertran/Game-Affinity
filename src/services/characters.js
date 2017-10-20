@@ -1,7 +1,7 @@
 import axios from 'axios'
 
 const api_key = "d7991f9eeb5808246e2d17e09f7be99b4becd042"
-const url_base = "https://www.giantbomb.com/api/characters/"
+const url_base = "https://proxy-game.herokuapp.com/api/characters/"
 
 class CharactersService {
 

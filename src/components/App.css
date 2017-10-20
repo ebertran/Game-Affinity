@@ -13,6 +13,12 @@ body{
 }
 
 /* GENERALS */
+.App nav {
+  margin-bottom: 0;
+}
 footer {
   margin-top: 50px;
+}
+footer .panel {
+  margin-bottom: 0px;
 }
