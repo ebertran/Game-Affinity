@@ -23,7 +23,7 @@ const items = [{
             "Popular?": "s",
             "Wealthy?": "a"
         }
-    }/*,
+    },
     {
         id: 4,
         question: "Which do you enjoy more in an online game?",
@@ -239,7 +239,7 @@ const items = [{
             "Have the highest score on the list" : "a",
             "Beat your best friend one-on-one?" : "k"
         }
-    }*/
+    }
 
 
 ]
