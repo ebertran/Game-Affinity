@@ -9,8 +9,8 @@ import RadarChart from "../../charts/radarchart.js"
 import './Results.css'
 
 class Results extends Component {
-  render() {
-    const testResult = this.props.answers
+  render() {  
+    const testResult = this.props.results
     const recomendationsIdList = GetIdChar(testResult)
     const gamerProfileId = recomendationsIdList[2]
     const gamerProfileIndex = gamersClassInfo.findIndex( item =>

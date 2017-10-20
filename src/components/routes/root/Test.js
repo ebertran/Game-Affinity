@@ -7,7 +7,6 @@ import {
   Col,
   ProgressBar
 } from "react-bootstrap";
-import Items from "./items.js";
 import { LinkContainer } from "react-router-bootstrap";
 
 import "./Test.css";
@@ -25,6 +24,7 @@ class Test extends Component {
 
   componentWillReceiveProps(nextProps) {
     if (nextProps.currentPosition === nextProps.totalQuestions) {
+      this.props.resetTest()
       this.props.history.push("/results");
     }
   }

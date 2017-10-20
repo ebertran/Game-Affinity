@@ -15,7 +15,8 @@ class Main extends Component {
     this.state = {
       questions: questions,
       currentPosition: 0,
-      answers: { k: 0, e: 0, a: 0, s: 0 }
+      answers: { k: 0, e: 0, a: 0, s: 0 },
+      results: { k: 0, e: 0, a: 0, s: 0 }
     }
   }
   
@@ -27,6 +28,14 @@ class Main extends Component {
       answers: newAnswers,
       currentPosition: currentPosition+1
     })
+  }
+
+  resetTest = () => {    
+      this.setState(prevState => ({
+        answers: { k: 0, e: 0, a: 0, s: 0 },
+        results: prevState.answers,
+        currentPosition: 0
+      }))
   }
 
   render() {
@@ -43,13 +52,18 @@ class Main extends Component {
                 currentPosition={ currentPosition } 
                 item={ questions[ currentPosition ]} 
                 handleAnswer={ this.handleAnswer } 
+                resetTest={this.resetTest}
               />
             ) 
           }}/>
           <Route path='/results' render={ () => {
-            const { answers } = this.state
+            const { results } = this.state
             return (
-              <Results answers={ answers } />
+              <Results 
+                results={ results }
+                resetTest={ this.resetTest }
+                onResultsShown={this.onResultsShown}
+              />
             )
           } } />
           <Route path='/about' component={ About } />
